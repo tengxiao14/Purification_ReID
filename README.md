@@ -6,7 +6,7 @@
 
 # Environment
 
-numpy, torch, torchvision
+numpy, torch, torchvision,
 
 six, h5py, Pillow, scipy,
 
