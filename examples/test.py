@@ -4,6 +4,9 @@ import os.path as osp
 import random
 import numpy as np
 import sys
+import os
+os.chdir(sys.path[0])  ##### solve the problem that the python path is not true
+sys.path.append("../")
 
 import torch
 from torch import nn
@@ -111,6 +114,8 @@ if __name__ == '__main__':
     parser.add_argument('--seed', type=int, default=1)
     # path
     working_dir = osp.dirname(osp.abspath(__file__))
+    ##### solve the problem that the python path is not true
+    working_dir = osp.join(working_dir, '..')
     parser.add_argument('--data-dir', type=str, metavar='PATH',
                         default=osp.join(working_dir, 'data'))
     parser.add_argument('--pooling-type', type=str, default='gem')
