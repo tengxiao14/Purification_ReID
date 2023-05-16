@@ -14,6 +14,13 @@ scikit-learn, metric-learn,
 
 faiss_gpu
 
+### Installation
+
+```shell
+git clone https://github.com/tengxiao14/Purification_ReID.git
+cd Purification_ReID
+python setup.py develop
+```
 
 ### Prepare Datasets
 
